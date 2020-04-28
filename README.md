@@ -18,5 +18,5 @@ Usage
 Validate a JSON file.
 
 ```sh
-$ docker container run --rm dceoy/jsonlint foo.json
+$ docker container run --rm -v ${PWD}:/wd -w /wd dceoy/jsonlint foo.json
 ```

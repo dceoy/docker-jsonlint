@@ -8,5 +8,8 @@ services:
       context: .
       dockerfile: Dockerfile
     image: dceoy/jsonlint:latest
+    volumes:
+      - .:/wd
+    working_dir: /wd
     entrypoint:
       - /usr/local/bin/jsonlint
