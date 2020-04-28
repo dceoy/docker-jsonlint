@@ -1,0 +1,12 @@
+---
+version: '3'
+
+services:
+  jsonlint:
+    container_name: jsonlint
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dceoy/jsonlint:latest
+    entrypoint:
+      - /usr/local/bin/jsonlint
